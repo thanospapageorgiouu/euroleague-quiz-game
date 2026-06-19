@@ -1,0 +1,122 @@
+# To-Do List
+
+## ✅ Soon
+
+* [✅] Project setup with Maven
+* [✅] JavaFX integration
+* [✅] Main Menu screen
+* [✅] Quiz screen
+* [✅] Result screen
+* [✅] Navigation between screens
+* [✅] Player model
+* [✅] Player creation
+* [✅] Player name input
+* [✅] Difficulty enum
+* [✅] Difficulty selection
+* [✅] Question model refactor (`List<String> answers`)
+* [✅] Gson integration
+* [✅] JSON question files
+* [✅] JsonQuestionLoader
+* [✅] Dynamic question loading
+* [✅] Score system
+* [✅] Result screen score display
+* [✅] Restart game flow
+* [ ] Player name validation
+  * [ ] Reject empty names
+  * [ ] Reject names containing only spaces
+  * [ ] Define maximum name length
+* [✅] Question pool system
+  * [✅] Load many questions from JSON
+  * [✅] Randomly select a subset for each game
+  * [✅] Prevent duplicate questions in the same game
+* [ ] Result statistics
+  * [ ] Correct answers
+  * [ ] Wrong answers
+  * [ ] Accuracy percentage
+  * [ ] Questions answered
+* [ ] Shuffle answer order
+* [ ] Add more questions to all difficulties
+* [ ] Improve UI styling
+  * [ ] Better spacing
+  * [ ] Better fonts
+  * [ ] Better button sizing
+* [ ] Add game configuration constants
+  * [ ] Number of questions per game
+  * [ ] Time limits (future use)
+* [ ] Create GameSession / QuizManager class
+  * [ ] Manage current game state
+  * [ ] Manage selected questions
+  * [ ] Manage score
+  * [ ] Reduce logic inside views
+
+---
+
+## 🔜 Later
+
+* [ ] Replace Difficulty system with Categories
+
+  * [ ] History
+  * [ ] Geography
+  * [ ] Science
+  * [ ] Sports
+  * [ ] Entertainment
+* [ ] Category selection screen
+* [ ] Support multiple categories
+* [ ] Statistics persistence
+
+  * [ ] Total games played
+  * [ ] Total correct answers
+  * [ ] Best score
+  * [ ] Average accuracy
+* [ ] Save player profiles to JSON
+* [ ] Save game history
+* [ ] Local leaderboard
+* [ ] Achievements system
+* [ ] Timed quiz mode
+* [ ] Streak / combo system
+* [ ] Lifelines
+
+  * [ ] 50-50
+  * [ ] Skip question
+  * [ ] Extra time
+* [ ] Sound effects
+* [ ] Background music
+* [ ] Theme system
+
+  * [ ] Dark mode
+  * [ ] Light mode
+* [ ] Question images support
+* [ ] Team logos support
+* [ ] Rich question types
+
+  * [ ] True / False
+  * [ ] Multiple choice
+  * [ ] Image questions
+* [ ] JSON validation system
+* [ ] Admin question editor
+* [ ] Create questions through GUI
+* [ ] Export / import question packs
+* [ ] Multiplayer architecture design
+* [ ] Local multiplayer
+
+  * [ ] Two players
+  * [ ] Same device
+  * [ ] Compare scores
+* [ ] Tournament mode
+* [ ] Online leaderboard
+* [ ] User accounts
+* [ ] Authentication system
+* [ ] Online multiplayer
+* [ ] Matchmaking system
+* [ ] Player rankings
+* [ ] Database integration
+* [ ] REST API backend
+* [ ] Cloud synchronization
+* [ ] Deploy as standalone application
+
+  * [ ] Windows executable
+  * [ ] Mac package
+  * [ ] Linux package
+* [ ] Mobile version research
+* [ ] Android version
+* [ ] Steam release research

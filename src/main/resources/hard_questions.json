@@ -1,0 +1,27 @@
+[
+  {
+    "questionText": "Who was the EuroLeague Regular Season MVP in 2021-2022?",
+    "answers": ["Mike James", "Shane Larkin", "Nikola Mirotic", "Sasha Vezenkov"],
+    "correctAnswer": "Nikola Mirotic"
+  },
+  {
+    "questionText": "Who was the EuroLeague Regular Season MVP in 2022-2023?",
+    "answers": ["Walter Tavares", "Mike James", "Sasha Vezenkov", "Kostas Sloukas"],
+    "correctAnswer": "Sasha Vezenkov"
+  },
+  {
+    "questionText": "Who was the EuroLeague Regular Season MVP in 2023-2024?",
+    "answers": ["Mike James", "Kendrick Nunn", "Mathias Lessort", "Walter Tavares"],
+    "correctAnswer": "Mike James"
+  },
+  {
+    "questionText": "Who was the EuroLeague Regular Season MVP in 2024-2025?",
+    "answers": ["Sasha Vezenkov", "Kendrick Nunn", "TJ Shorts", "Edy Tavares"],
+    "correctAnswer": "Kendrick Nunn"
+  },
+  {
+    "questionText": "Who was the EuroLeague Regular Season MVP in 2025-2026?",
+    "answers": ["Kendrick Nunn", "Sasha Vezenkov", "Jean Montero", "Elijah Bryant"],
+    "correctAnswer": "Sasha Vezenkov"
+  }
+]

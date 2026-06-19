@@ -1,0 +1,442 @@
+[
+  {
+    "questionText": "Which team won the 1981-1982 EuroLeague?",
+    "answers": [
+      "Squibb Cantu",
+      "Maccabi Tel Aviv",
+      "Partizan",
+      "Real Madrid"
+    ],
+    "correctAnswer": "Squibb Cantu"
+  },
+  {
+    "questionText": "Which team won the 1982-1983 EuroLeague?",
+    "answers": [
+      "Ford Cantu",
+      "Bosna",
+      "Maccabi Tel Aviv",
+      "Real Madrid"
+    ],
+    "correctAnswer": "Ford Cantu"
+  },
+  {
+    "questionText": "Which team won the 1983-1984 EuroLeague?",
+    "answers": [
+      "Banco di Roma",
+      "Barcelona",
+      "Maccabi Tel Aviv",
+      "Cantu"
+    ],
+    "correctAnswer": "Banco di Roma"
+  },
+  {
+    "questionText": "Which team won the 1984-1985 EuroLeague?",
+    "answers": [
+      "Cibona Zagreb",
+      "Real Madrid",
+      "Maccabi Tel Aviv",
+      "Barcelona"
+    ],
+    "correctAnswer": "Cibona Zagreb"
+  },
+  {
+    "questionText": "Which team won the 1985-1986 EuroLeague?",
+    "answers": [
+      "Cibona Zagreb",
+      "Zalgiris",
+      "Maccabi Tel Aviv",
+      "Barcelona"
+    ],
+    "correctAnswer": "Cibona Zagreb"
+  },
+  {
+    "questionText": "Which team won the 1986-1987 EuroLeague?",
+    "answers": [
+      "Tracer Milano",
+      "Maccabi Tel Aviv",
+      "Barcelona",
+      "Aris"
+    ],
+    "correctAnswer": "Tracer Milano"
+  },
+  {
+    "questionText": "Which team won the 1987-1988 European Champions Cup?",
+    "answers": [
+      "Tracer Milano",
+      "Maccabi Tel Aviv",
+      "Partizan",
+      "Aris"
+    ],
+    "correctAnswer": "Tracer Milano"
+  },
+  {
+    "questionText": "Which team won the 1988-1989 European Champions Cup?",
+    "answers": [
+      "Jugoplastika",
+      "Maccabi Tel Aviv",
+      "Aris",
+      "Barcelona"
+    ],
+    "correctAnswer": "Jugoplastika"
+  },
+  {
+    "questionText": "Which team won the 1989-1990 European Champions Cup?",
+    "answers": [
+      "Jugoplastika",
+      "Barcelona",
+      "Limoges",
+      "Aris"
+    ],
+    "correctAnswer": "Jugoplastika"
+  },
+  {
+    "questionText": "Which team won the 1990-1991 European Champions Cup?",
+    "answers": [
+      "POP 84 Split",
+      "Barcelona",
+      "Maccabi Tel Aviv",
+      "Scavolini Pesaro"
+    ],
+    "correctAnswer": "POP 84 Split"
+  },
+  {
+    "questionText": "Which team won the 1991-1992 European League?",
+    "answers": [
+      "Partizan",
+      "Joventut Badalona",
+      "Philips Milano",
+      "Estudiantes"
+    ],
+    "correctAnswer": "Partizan"
+  },
+  {
+    "questionText": "Which team won the 1992-1993 European League?",
+    "answers": [
+      "Limoges",
+      "Benetton Treviso",
+      "PAOK",
+      "Real Madrid"
+    ],
+    "correctAnswer": "Limoges"
+  },
+  {
+    "questionText": "Which team won the 1993-1994 European League?",
+    "answers": [
+      "Joventut Badalona",
+      "Olympiakos",
+      "Barcelona",
+      "Panathinaikos"
+    ],
+    "correctAnswer": "Joventut Badalona"
+  },
+  {
+    "questionText": "Which team won the 1994-1995 European League?",
+    "answers": [
+      "Real Madrid",
+      "Olympiakos",
+      "Limoges",
+      "Panathinaikos"
+    ],
+    "correctAnswer": "Real Madrid"
+  },
+  {
+    "questionText": "Which team won the 1995-1996 European League?",
+    "answers": [
+      "Panathinaikos",
+      "Barcelona",
+      "CSKA Moscow",
+      "Real Madrid"
+    ],
+    "correctAnswer": "Panathinaikos"
+  },
+  {
+    "questionText": "Which team won the 1996-1997 EuroLeague?",
+    "answers": [
+      "Olympiakos",
+      "Barcelona",
+      "Smelt Olimpija",
+      "Villeurbanne"
+    ],
+    "correctAnswer": "Olympiakos"
+  },
+  {
+    "questionText": "Which team won the 1997-1998 EuroLeague?",
+    "answers": [
+      "Kinder Bologna",
+      "AEK",
+      "Benetton Treviso",
+      "Partizan"
+    ],
+    "correctAnswer": "Kinder Bologna"
+  },
+  {
+    "questionText": "Which team won the 1998-1999 EuroLeague?",
+    "answers": [
+      "Zalgiris",
+      "Kinder Bologna",
+      "Olympiakos",
+      "Teamsystem Bologna"
+    ],
+    "correctAnswer": "Zalgiris"
+  },
+  {
+    "questionText": "Which team won the 1999-2000 EuroLeague?",
+    "answers": [
+      "Panathinaikos",
+      "Maccabi Tel Aviv",
+      "Efes Pilsen",
+      "Barcelona"
+    ],
+    "correctAnswer": "Panathinaikos"
+  },
+  {
+    "questionText": "Which team won the 2000-2001 EuroLeague?",
+    "answers": [
+      "Kinder Bologna",
+      "Tau Ceramica",
+      "AEK",
+      "CSKA Moscow"
+    ],
+    "correctAnswer": "Kinder Bologna"
+  },
+  {
+    "questionText": "Which team won the 2001-2002 EuroLeague?",
+    "answers": [
+      "Panathinaikos",
+      "Kinder Bologna",
+      "Maccabi Tel Aviv",
+      "Benetton Treviso"
+    ],
+    "correctAnswer": "Panathinaikos"
+  },
+  {
+    "questionText": "Which team won the 2002-2003 EuroLeague?",
+    "answers": [
+      "Barcelona",
+      "Benetton Treviso",
+      "CSKA Moscow",
+      "Montepaschi Siena"
+    ],
+    "correctAnswer": "Barcelona"
+  },
+  {
+    "questionText": "Which team won the 2003-2004 EuroLeague?",
+    "answers": [
+      "Maccabi Tel Aviv",
+      "Skipper Bologna",
+      "CSKA Moscow",
+      "Montepaschi Siena"
+    ],
+    "correctAnswer": "Maccabi Tel Aviv"
+  },
+  {
+    "questionText": "Which team won the 2004-2005 EuroLeague?",
+    "answers": [
+      "Maccabi Tel Aviv",
+      "Tau Ceramica",
+      "Panathinaikos",
+      "CSKA Moscow"
+    ],
+    "correctAnswer": "Maccabi Tel Aviv"
+  },
+  {
+    "questionText": "Which team won the 2005-2006 EuroLeague?",
+    "answers": [
+      "CSKA Moscow",
+      "Maccabi Tel Aviv",
+      "Tau Ceramica",
+      "Barcelona"
+    ],
+    "correctAnswer": "CSKA Moscow"
+  },
+  {
+    "questionText": "Which team won the 2006-2007 EuroLeague?",
+    "answers": [
+      "Panathinaikos",
+      "CSKA Moscow",
+      "Tau Ceramica",
+      "Unicaja"
+    ],
+    "correctAnswer": "Panathinaikos"
+  },
+  {
+    "questionText": "Which team won the 2007-2008 EuroLeague?",
+    "answers": [
+      "CSKA Moscow",
+      "Maccabi Tel Aviv",
+      "Tau Ceramica",
+      "Siena"
+    ],
+    "correctAnswer": "CSKA Moscow"
+  },
+  {
+    "questionText": "Which team won the 2008-2009 EuroLeague?",
+    "answers": [
+      "Panathinaikos",
+      "CSKA Moscow",
+      "Olympiakos",
+      "Barcelona"
+    ],
+    "correctAnswer": "Panathinaikos"
+  },
+  {
+    "questionText": "Which team won the 2009-2010 EuroLeague?",
+    "answers": [
+      "Barcelona",
+      "Olympiakos",
+      "CSKA Moscow",
+      "Partizan"
+    ],
+    "correctAnswer": "Barcelona"
+  },
+  {
+    "questionText": "Which team won the 2010-2011 EuroLeague?",
+    "answers": [
+      "Panathinaikos",
+      "Maccabi Tel Aviv",
+      "Montepaschi Siena",
+      "Real Madrid"
+    ],
+    "correctAnswer": "Panathinaikos"
+  },
+  {
+    "questionText": "Which team won the 2011-2012 EuroLeague?",
+    "answers": [
+      "Olympiakos",
+      "CSKA Moscow",
+      "Barcelona",
+      "Panathinaikos"
+    ],
+    "correctAnswer": "Olympiakos"
+  },
+  {
+    "questionText": "Which team won the 2012-2013 EuroLeague?",
+    "answers": [
+      "Olympiakos",
+      "Real Madrid",
+      "CSKA Moscow",
+      "Barcelona"
+    ],
+    "correctAnswer": "Olympiakos"
+  },
+  {
+    "questionText": "Which team won the 2013-2014 EuroLeague?",
+    "answers": [
+      "Maccabi Tel Aviv",
+      "Real Madrid",
+      "Barcelona",
+      "CSKA Moscow"
+    ],
+    "correctAnswer": "Maccabi Tel Aviv"
+  },
+  {
+    "questionText": "Which team won the 2014-2015 EuroLeague?",
+    "answers": [
+      "Real Madrid",
+      "Olympiakos",
+      "CSKA Moscow",
+      "Fenerbahce"
+    ],
+    "correctAnswer": "Real Madrid"
+  },
+  {
+    "questionText": "Which team won the 2015-2016 EuroLeague?",
+    "answers": [
+      "CSKA Moscow",
+      "Fenerbahce",
+      "Lokomotiv Kuban",
+      "Laboral Kutxa"
+    ],
+    "correctAnswer": "CSKA Moscow"
+  },
+  {
+    "questionText": "Which team won the 2016-2017 EuroLeague?",
+    "answers": [
+      "Fenerbahce",
+      "Olympiakos",
+      "CSKA Moscow",
+      "Real Madrid"
+    ],
+    "correctAnswer": "Fenerbahce"
+  },
+  {
+    "questionText": "Which team won the 2017-2018 EuroLeague?",
+    "answers": [
+      "Real Madrid",
+      "Fenerbahce",
+      "CSKA Moscow",
+      "Zalgiris"
+    ],
+    "correctAnswer": "Real Madrid"
+  },
+  {
+    "questionText": "Which team won the 2018-2019 EuroLeague?",
+    "answers": [
+      "CSKA Moscow",
+      "Anadolu Efes",
+      "Real Madrid",
+      "Fenerbahce"
+    ],
+    "correctAnswer": "CSKA Moscow"
+  },
+  {
+    "questionText": "Which team won the 2020-2021 EuroLeague?",
+    "answers": [
+      "Anadolu Efes",
+      "Barcelona",
+      "AX Armani Exchange Milan",
+      "CSKA Moscow"
+    ],
+    "correctAnswer": "Anadolu Efes"
+  },
+  {
+    "questionText": "Which team won the 2021-2022 EuroLeague?",
+    "answers": [
+      "Olympiakos",
+      "Anadolu Efes",
+      "Real Madrid",
+      "Barcelona"
+    ],
+    "correctAnswer": "Anadolu Efes"
+  },
+  {
+    "questionText": "Which team won the 2022-2023 EuroLeague?",
+    "answers": [
+      "Olympiakos",
+      "Monaco",
+      "Real Madrid",
+      "Fenerbahce"
+    ],
+    "correctAnswer": "Real Madrid"
+  },
+  {
+    "questionText": "Which team won the 2023-2024 EuroLeague?",
+    "answers": [
+      "Olympiakos",
+      "Panathinaikos",
+      "Real Madrid",
+      "Fenerbahce"
+    ],
+    "correctAnswer": "Panathinaikos"
+  },
+  {
+    "questionText": "Which team won the 2024-2025 EuroLeague?",
+    "answers": [
+      "Olympiakos",
+      "Panathinaikos",
+      "Monaco",
+      "Fenerbahce"
+    ],
+    "correctAnswer": "Fenerbahce"
+  },
+  {
+    "questionText": "Which team won the 2025-2026 EuroLeague?",
+    "answers": [
+      "Olympiakos",
+      "Panathinaikos",
+      "Real Madrid",
+      "Fenerbahce"
+    ],
+    "correctAnswer": "Olympiakos"
+  }
+]

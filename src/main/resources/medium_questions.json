@@ -1,0 +1,167 @@
+[
+  {
+    "questionText": "In which city was the 1987-1988 EuroLeague Final Four held?",
+    "answers": ["Ghent", "Munich", "Paris", "Athens"],
+    "correctAnswer": "Ghent"
+  },
+  {
+    "questionText": "In which city was the 1988-1989 EuroLeague Final Four held?",
+    "answers": ["Munich", "Ghent", "Rome", "Madrid"],
+    "correctAnswer": "Munich"
+  },
+  {
+    "questionText": "In which city was the 1989-1990 EuroLeague Final Four held?",
+    "answers": ["Zaragoza", "Paris", "Munich", "Athens"],
+    "correctAnswer": "Zaragoza"
+  },
+  {
+    "questionText": "In which city was the 1990-1991 EuroLeague Final Four held?",
+    "answers": ["Paris", "Rome", "Istanbul", "Athens"],
+    "correctAnswer": "Paris"
+  },
+  {
+    "questionText": "In which city was the 1991-1992 EuroLeague Final Four held?",
+    "answers": ["Istanbul", "Athens", "Munich", "Madrid"],
+    "correctAnswer": "Istanbul"
+  },
+  {
+    "questionText": "In which city was the 1992-1993 EuroLeague Final Four held?",
+    "answers": ["Piraeus", "Athens", "Paris", "Rome"],
+    "correctAnswer": "Piraeus"
+  },
+  {
+    "questionText": "In which city was the 1993-1994 EuroLeague Final Four held?",
+    "answers": ["Tel Aviv", "Piraeus", "Athens", "Istanbul"],
+    "correctAnswer": "Tel Aviv"
+  },
+  {
+    "questionText": "In which city was the 1994-1995 EuroLeague Final Four held?",
+    "answers": ["Zaragoza", "Madrid", "Barcelona", "Rome"],
+    "correctAnswer": "Zaragoza"
+  },
+  {
+    "questionText": "In which city was the 1995-1996 EuroLeague Final Four held?",
+    "answers": ["Paris", "Athens", "Rome", "Berlin"],
+    "correctAnswer": "Paris"
+  },
+  {
+    "questionText": "In which city was the 1996-1997 EuroLeague Final Four held?",
+    "answers": ["Rome", "Athens", "Barcelona", "Munich"],
+    "correctAnswer": "Rome"
+  },
+  {
+    "questionText": "In which city was the 1997-1998 EuroLeague Final Four held?",
+    "answers": ["Barcelona", "Madrid", "Paris", "Athens"],
+    "correctAnswer": "Barcelona"
+  },
+  {
+    "questionText": "In which city was the 1998-1999 EuroLeague Final Four held?",
+    "answers": ["Munich", "Paris", "Tel Aviv", "Rome"],
+    "correctAnswer": "Munich"
+  },
+  {
+    "questionText": "In which city was the 1999-2000 EuroLeague Final Four held?",
+    "answers": ["Thessaloniki", "Athens", "Piraeus", "Istanbul"],
+    "correctAnswer": "Thessaloniki"
+  },
+  {
+    "questionText": "In which city was the 2000-2001 EuroLeague Final Four held?",
+    "answers": ["Paris", "Tel Aviv", "Barcelona", "Rome"],
+    "correctAnswer": "Paris"
+  },
+  {
+    "questionText": "In which city was the 2001-2002 EuroLeague Final Four held?",
+    "answers": ["Bologna", "Athens", "Barcelona", "Madrid"],
+    "correctAnswer": "Bologna"
+  },
+  {
+    "questionText": "In which city was the 2002-2003 EuroLeague Final Four held?",
+    "answers": ["Barcelona", "Valencia", "Madrid", "Athens"],
+    "correctAnswer": "Barcelona"
+  },
+  {
+    "questionText": "In which city was the 2003-2004 EuroLeague Final Four held?",
+    "answers": ["Tel Aviv", "Athens", "Rome", "Paris"],
+    "correctAnswer": "Tel Aviv"
+  },
+  {
+    "questionText": "In which city was the 2004-2005 EuroLeague Final Four held?",
+    "answers": ["Moscow", "Athens", "Madrid", "Istanbul"],
+    "correctAnswer": "Moscow"
+  },
+  {
+    "questionText": "In which city was the 2005-2006 EuroLeague Final Four held?",
+    "answers": ["Prague", "Athens", "Berlin", "Paris"],
+    "correctAnswer": "Prague"
+  },
+  {
+    "questionText": "In which city was the 2006-2007 EuroLeague Final Four held?",
+    "answers": ["Athens", "Thessaloniki", "Madrid", "Berlin"],
+    "correctAnswer": "Athens"
+  },
+  {
+    "questionText": "In which city was the 2007-2008 EuroLeague Final Four held?",
+    "answers": ["Madrid", "Barcelona", "Athens", "Paris"],
+    "correctAnswer": "Madrid"
+  },
+  {
+    "questionText": "In which city was the 2008-2009 EuroLeague Final Four held?",
+    "answers": ["Berlin", "Paris", "Madrid", "Athens"],
+    "correctAnswer": "Berlin"
+  },
+  {
+    "questionText": "In which city was the 2009-2010 EuroLeague Final Four held?",
+    "answers": ["Paris", "Berlin", "Rome", "Athens"],
+    "correctAnswer": "Paris"
+  },
+  {
+    "questionText": "In which city was the 2010-2011 EuroLeague Final Four held?",
+    "answers": ["Barcelona", "Madrid", "Athens", "Istanbul"],
+    "correctAnswer": "Barcelona"
+  },
+  {
+    "questionText": "In which city was the 2011-2012 EuroLeague Final Four held?",
+    "answers": ["Istanbul", "Athens", "Madrid", "Berlin"],
+    "correctAnswer": "Istanbul"
+  },
+  {
+    "questionText": "In which city was the 2012-2013 EuroLeague Final Four held?",
+    "answers": ["London", "Paris", "Berlin", "Athens"],
+    "correctAnswer": "London"
+  },
+  {
+    "questionText": "In which city was the 2013-2014 EuroLeague Final Four held?",
+    "answers": ["Milan", "Rome", "Madrid", "Athens"],
+    "correctAnswer": "Milan"
+  },
+  {
+    "questionText": "In which city was the 2014-2015 EuroLeague Final Four held?",
+    "answers": ["Madrid", "Barcelona", "Berlin", "Athens"],
+    "correctAnswer": "Madrid"
+  },
+  {
+    "questionText": "In which city was the 2015-2016 EuroLeague Final Four held?",
+    "answers": ["Berlin", "Paris", "Madrid", "Athens"],
+    "correctAnswer": "Berlin"
+  },
+  {
+    "questionText": "In which city was the 2016-2017 EuroLeague Final Four held?",
+    "answers": ["Istanbul", "Athens", "Belgrade", "Madrid"],
+    "correctAnswer": "Istanbul"
+  },
+  {
+    "questionText": "In which city was the 2017-2018 EuroLeague Final Four held?",
+    "answers": ["Belgrade", "Athens", "Istanbul", "Madrid"],
+    "correctAnswer": "Belgrade"
+  },
+  {
+    "questionText": "In which city was the 2018-2019 EuroLeague Final Four held?",
+    "answers": ["Vitoria-Gasteiz", "Madrid", "Barcelona", "Athens"],
+    "correctAnswer": "Vitoria-Gasteiz"
+  },
+  {
+    "questionText": "In which city was the 2020-2021 EuroLeague Final Four held?",
+    "answers": ["Cologne", "Berlin", "Athens", "Belgrade"],
+    "correctAnswer": "Cologne"
+  }
+]
