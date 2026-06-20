@@ -20,23 +20,67 @@ public class ResultView {
         this.player = player;
         this.totalQuestions = totalQuestions;
 
-        Label finish =  new Label();
+        Label finish = new Label();
+        Label playerName = new Label();
         Label scoreLabel = new Label();
-        Button MainMenu = new Button();
+        Button mainMenu = new Button();
 
-        finish.setText("Finish");
-        scoreLabel.setText("Score: " + player.getScore() + " / " + totalQuestions);
-        MainMenu.setText("Main Menu");
+        finish.setText("FINAL SCORE");
+        playerName.setText("Player: " + player.getName());
 
-        MainMenu.setOnAction(e -> {
+        double accuracy = ((double) player.getScore() / totalQuestions) * 100;
+
+        scoreLabel.setText(
+                "Score: " + player.getScore() +
+                        " / " + totalQuestions +
+                        " (" + String.format("%.1f", accuracy) + "%)"
+        );
+
+        mainMenu.setText("Main Menu");
+
+        mainMenu.setOnAction(e -> {
             MainMenuView menu = new MainMenuView(stage);
             stage.setScene(menu.getScene());
         });
 
+        finish.setStyle(
+                "-fx-font-size: 32px;" +
+                        "-fx-font-weight: bold;" +
+                        "-fx-text-fill: gold;"
+        );
+
+        playerName.setStyle(
+                "-fx-font-size: 22px;" +
+                        "-fx-text-fill: white;"
+        );
+
+        scoreLabel.setStyle(
+                "-fx-font-size: 24px;" +
+                        "-fx-font-weight: bold;" +
+                        "-fx-text-fill: white;"
+        );
+
+        mainMenu.setPrefWidth(250);
+
+        mainMenu.setStyle(
+                "-fx-font-size: 18px;" +
+                        "-fx-background-color: #2d2d2d;" +
+                        "-fx-text-fill: white;"
+        );
+
         VBox layout = new VBox(20);
         layout.setAlignment(Pos.CENTER);
 
-        layout.getChildren().addAll(finish, scoreLabel, MainMenu);
+        layout.setStyle(
+                "-fx-background-color: #1a1a1a;"
+        );
+
+        layout.getChildren().addAll(
+                finish,
+                playerName,
+                scoreLabel,
+                mainMenu
+        );
 
         scene = new Scene(layout, 1280, 780);
     }
