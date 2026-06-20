@@ -25,6 +25,7 @@ public class QuizView {
     private Button nextButton;
     private Question currentQuestion;
     private Difficulty difficulty;
+    private boolean questionAnswered = false;
 
     private List<Question> questions;
     private ArrayList<Button> buttons;
@@ -129,17 +130,21 @@ public class QuizView {
 
     //other methods
     private void checkAnswer(Button button, String correctAnswer, Label questionLabel, Button nextButton) {
-        if(button.getText().equals(correctAnswer)){
-            questionLabel.setText("Correct!");
-            player.incrementScore();
-            scoreLabel.setText("Score: " + player.getScore());
-        }else{
-            questionLabel.setText("Wrong!");
+        if (!questionAnswered){
+            if(button.getText().equals(correctAnswer)){
+                questionLabel.setText("Correct!");
+                player.incrementScore();
+                scoreLabel.setText("Score: " + player.getScore());
+            }else{
+                questionLabel.setText("Wrong!\nCorrect answer: " + correctAnswer);
+            }
+            questionAnswered = true;
+            nextButton.setVisible(true);
         }
-        nextButton.setVisible(true);
     }
 
     private void updateQuestion() {
+        questionAnswered = false;
         questionLabel.setText(currentQuestion.getQuestionText());
         buttons.get(0).setText(currentQuestion.getAnswers().get(0));
         buttons.get(1).setText(currentQuestion.getAnswers().get(1));
