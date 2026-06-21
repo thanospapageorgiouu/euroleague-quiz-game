@@ -30,11 +30,11 @@
   * [✅] Randomly select a subset for each game
   * [✅] Prevent duplicate questions in the same game
 * [ ] Result statistics
-  * [ ] Correct answers
+  * [✅] Correct answers
   * [ ] Wrong answers
-  * [ ] Accuracy percentage
-  * [ ] Questions answered
-* [ ] Shuffle answer order
+  * [✅] Accuracy percentage
+  * [✅] Questions answered
+* [✅] Shuffle answer order
 * [ ] Add more questions to all difficulties
 * [ ] Improve UI styling
   * [ ] Better spacing

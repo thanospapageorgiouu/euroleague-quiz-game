@@ -15,7 +15,7 @@ public class ResultView {
 
     private Scene scene;
 
-    public  ResultView(Stage stage, Player player, int totalQuestions) {
+    public ResultView(Stage stage, Player player, int totalQuestions) {
         this.stage = stage;
         this.player = player;
         this.totalQuestions = totalQuestions;
@@ -23,18 +23,26 @@ public class ResultView {
         Label finish = new Label();
         Label playerName = new Label();
         Label scoreLabel = new Label();
+        Label correctLabel = new Label();
+        Label wrongLabel = new Label();
+        Label accuracyLabel = new Label();
         Button mainMenu = new Button();
 
         finish.setText("FINAL SCORE");
         playerName.setText("Player: " + player.getName());
 
-        double accuracy = ((double) player.getScore() / totalQuestions) * 100;
+        int correctAnswers = player.getScore();
+        int wrongAnswers = totalQuestions - correctAnswers;
+        double accuracy = ((double) correctAnswers / totalQuestions) * 100;
 
         scoreLabel.setText(
-                "Score: " + player.getScore() +
-                        " / " + totalQuestions +
-                        " (" + String.format("%.1f", accuracy) + "%)"
+                "Score: " + correctAnswers +
+                        " / " + totalQuestions
         );
+
+        correctLabel.setText("Correct Answers: " + correctAnswers);
+        wrongLabel.setText("Wrong Answers: " + wrongAnswers);
+        accuracyLabel.setText("Accuracy: " + String.format("%.1f", accuracy) + "%");
 
         mainMenu.setText("Main Menu");
 
@@ -60,6 +68,21 @@ public class ResultView {
                         "-fx-text-fill: white;"
         );
 
+        correctLabel.setStyle(
+                "-fx-font-size: 18px;" +
+                        "-fx-text-fill: lightgreen;"
+        );
+
+        wrongLabel.setStyle(
+                "-fx-font-size: 18px;" +
+                        "-fx-text-fill: #ff6666;"
+        );
+
+        accuracyLabel.setStyle(
+                "-fx-font-size: 18px;" +
+                        "-fx-text-fill: gold;"
+        );
+
         mainMenu.setPrefWidth(250);
 
         mainMenu.setStyle(
@@ -79,6 +102,9 @@ public class ResultView {
                 finish,
                 playerName,
                 scoreLabel,
+                correctLabel,
+                wrongLabel,
+                accuracyLabel,
                 mainMenu
         );
 
