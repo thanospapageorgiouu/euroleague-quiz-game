@@ -10,6 +10,8 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import com.ath.euroquiz.models.Player;
+
+import java.util.Collections;
 import java.util.List;
 import com.ath.euroquiz.managers.QuizManager;
 
@@ -145,11 +147,13 @@ public class QuizView {
 
     private void updateQuestion() {
         questionAnswered = false;
+        List<String> tempAnswers = new ArrayList<>(currentQuestion.getAnswers());
+        Collections.shuffle(tempAnswers);
         questionLabel.setText(currentQuestion.getQuestionText());
-        buttons.get(0).setText(currentQuestion.getAnswers().get(0));
-        buttons.get(1).setText(currentQuestion.getAnswers().get(1));
-        buttons.get(2).setText(currentQuestion.getAnswers().get(2));
-        buttons.get(3).setText(currentQuestion.getAnswers().get(3));
+
+        for (int i = 0; i < currentQuestion.getAnswers().size(); i++) {
+            buttons.get(i).setText(tempAnswers.get(i));
+        }
         nextButton.setVisible(false);
     }
 
