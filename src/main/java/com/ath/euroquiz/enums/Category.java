@@ -1,13 +1,13 @@
 package com.ath.euroquiz.enums;
 
-public enum Difficulty {
-    EASY("easy_questions.json"),
-    MEDIUM("medium_questions.json"),
-    HARD("hard_questions.json");
+public enum Category {
+    HISTORY("history_questions.json"),
+    GEOGRAPHY("geography_questions.json"),
+    MVP("mvp_questions.json");
 
     private final String fileName;
 
-    Difficulty(String fileName) {
+    Category(String fileName) {
         this.fileName = fileName;
     }
 

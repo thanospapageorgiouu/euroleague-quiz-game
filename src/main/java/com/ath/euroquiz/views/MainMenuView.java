@@ -1,6 +1,6 @@
 package com.ath.euroquiz.views;
 
-import com.ath.euroquiz.enums.Difficulty;
+import com.ath.euroquiz.enums.Category;
 import com.ath.euroquiz.models.Player;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -28,20 +28,20 @@ public class MainMenuView {
         namePrompt.setText("Player Name:");
 
         //Difficulty select
-        RadioButton easy =  new RadioButton("Easy");
-        RadioButton medium =  new RadioButton("Medium");
-        RadioButton hard =  new RadioButton("Hard");
+        RadioButton history =  new RadioButton("History");
+        RadioButton geography =  new RadioButton("Geography");
+        RadioButton mvp =  new RadioButton("MVP");
 
         ToggleGroup group = new ToggleGroup();
 
-        easy.setToggleGroup(group);
-        medium.setToggleGroup(group);
-        hard.setToggleGroup(group);
-        easy.setSelected(true); //Default Difficulty
+        history.setToggleGroup(group);
+        geography.setToggleGroup(group);
+        mvp.setToggleGroup(group);
+        history.setSelected(true); //Default Difficulty
 
-        easy.setUserData(Difficulty.EASY);
-        medium.setUserData(Difficulty.MEDIUM);
-        hard.setUserData(Difficulty.HARD);
+        history.setUserData(Category.HISTORY);
+        geography.setUserData(Category.GEOGRAPHY);
+        mvp.setUserData(Category.MVP);
 
         //Start - Exit Buttons
         startButton = new Button("Start");
@@ -52,14 +52,14 @@ public class MainMenuView {
         difficultyBox.setAlignment(Pos.CENTER);
 
         difficultyBox.getChildren().addAll(
-                easy,
-                medium,
-                hard
+                history,
+                geography,
+                mvp
         );
 
-        easy.setMinWidth(200);
-        medium.setMinWidth(200);
-        hard.setMinWidth(200);
+        history.setMinWidth(200);
+        geography.setMinWidth(200);
+        mvp.setMinWidth(200);
 
         //Layout Creation
         VBox layout = new VBox(20);
@@ -80,9 +80,9 @@ public class MainMenuView {
                         "-fx-text-fill: white;"
         );
 
-        easy.setStyle("-fx-text-fill: white;");
-        medium.setStyle("-fx-text-fill: white;");
-        hard.setStyle("-fx-text-fill: white;");
+        history.setStyle("-fx-text-fill: white;");
+        geography.setStyle("-fx-text-fill: white;");
+        mvp.setStyle("-fx-text-fill: white;");
 
         startButton.setPrefWidth(200);
         exitButton.setPrefWidth(200);
@@ -102,11 +102,11 @@ public class MainMenuView {
 
         //Buttons Actions
         startButton.setOnAction(e -> {
-            Difficulty difficulty = (Difficulty) group.getSelectedToggle().getUserData();
+            Category category = (Category) group.getSelectedToggle().getUserData();
             Player player = new Player(playerNameField.getText());
-            QuizView quizView = new QuizView(stage, player, difficulty);
+            QuizView quizView = new QuizView(stage, player, category);
             stage.setScene(quizView.getScene());
-            System.out.println(difficulty);
+            System.out.println(category);
         });
         exitButton.setOnAction(e -> stage.close());
 

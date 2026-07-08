@@ -29,13 +29,12 @@
   * [✅] Load many questions from JSON
   * [✅] Randomly select a subset for each game
   * [✅] Prevent duplicate questions in the same game
-* [ ] Result statistics
+* [✅] Result statistics
   * [✅] Correct answers
-  * [ ] Wrong answers
+  * [✅] Wrong answers
   * [✅] Accuracy percentage
   * [✅] Questions answered
 * [✅] Shuffle answer order
-* [ ] Add more questions to all difficulties
 * [ ] Improve UI styling
   * [ ] Better spacing
   * [ ] Better fonts
@@ -54,16 +53,19 @@
 ## 🔜 Later
 
 * [ ] Replace Difficulty system with Categories
-
   * [ ] History
   * [ ] Geography
-  * [ ] Science
-  * [ ] Sports
-  * [ ] Entertainment
+  * [ ] Logo Quiz
+  * [ ] Club Combo
+  * [ ] Missing player from Roster
+  * [ ] Over/Under
+  * [ ] SouSou
+  * [ ] Transfer History
+  * [ ] Guess the score
+  * [ ] Top 5
 * [ ] Category selection screen
 * [ ] Support multiple categories
 * [ ] Statistics persistence
-
   * [ ] Total games played
   * [ ] Total correct answers
   * [ ] Best score
@@ -75,20 +77,17 @@
 * [ ] Timed quiz mode
 * [ ] Streak / combo system
 * [ ] Lifelines
-
   * [ ] 50-50
   * [ ] Skip question
   * [ ] Extra time
 * [ ] Sound effects
 * [ ] Background music
 * [ ] Theme system
-
   * [ ] Dark mode
   * [ ] Light mode
 * [ ] Question images support
 * [ ] Team logos support
 * [ ] Rich question types
-
   * [ ] True / False
   * [ ] Multiple choice
   * [ ] Image questions
@@ -98,7 +97,6 @@
 * [ ] Export / import question packs
 * [ ] Multiplayer architecture design
 * [ ] Local multiplayer
-
   * [ ] Two players
   * [ ] Same device
   * [ ] Compare scores
@@ -113,7 +111,6 @@
 * [ ] REST API backend
 * [ ] Cloud synchronization
 * [ ] Deploy as standalone application
-
   * [ ] Windows executable
   * [ ] Mac package
   * [ ] Linux package

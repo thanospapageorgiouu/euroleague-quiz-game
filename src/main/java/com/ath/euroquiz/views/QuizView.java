@@ -1,6 +1,6 @@
 package com.ath.euroquiz.views;
 
-import com.ath.euroquiz.enums.Difficulty;
+import com.ath.euroquiz.enums.Category;
 import com.ath.euroquiz.loaders.JsonQuestionLoader;
 import com.ath.euroquiz.models.Question;
 import javafx.geometry.Pos;
@@ -26,17 +26,17 @@ public class QuizView {
     private int currentQuestionIndex;
     private Button nextButton;
     private Question currentQuestion;
-    private Difficulty difficulty;
+    private Category category;
     private boolean questionAnswered = false;
 
     private List<Question> questions;
     private ArrayList<Button> buttons;
     private static int score;
 
-    public QuizView(Stage stage, Player player, Difficulty difficulty) {
+    public QuizView(Stage stage, Player player, Category category) {
         this.stage = stage;
         this.player = player;
-        this.difficulty = difficulty;
+        this.category = category;
 
         buttons = new ArrayList<Button>();
         currentQuestionIndex = 0;
@@ -47,7 +47,7 @@ public class QuizView {
         nextButton.setVisible(false);
 
         //Question List creation
-        loadQuestions(difficulty);
+        loadQuestions(category);
 
         //Take first question
         currentQuestion = questions.get(currentQuestionIndex);
@@ -157,8 +157,8 @@ public class QuizView {
         nextButton.setVisible(false);
     }
 
-    private void loadQuestions(Difficulty difficulty){
-        questions = JsonQuestionLoader.loadQuestions(difficulty);
+    private void loadQuestions(Category category){
+        questions = JsonQuestionLoader.loadQuestions(category);
         QuizManager quizManager = new QuizManager(questions, 10);
         questions = quizManager.getQuizQuestions();
     }
