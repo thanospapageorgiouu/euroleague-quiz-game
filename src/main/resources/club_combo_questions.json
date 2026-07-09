@@ -1,0 +1,52 @@
+[
+  {
+    "questionText": "Find a player who played for the following teams.",
+    "answers": ["Olympiacos", "Fenerbahce"],
+    "correctAnswer": "Kostas Sloukas"
+  },
+  {
+    "questionText": "Find a player who played for the following teams.",
+    "answers": ["Panathinaikos", "FC Barcelona"],
+    "correctAnswer": "Sarunas Jasikevicius"
+  },
+  {
+    "questionText": "Find a player who played for the following teams.",
+    "answers": ["Real Madrid", "CSKA Moscow"],
+    "correctAnswer": "Sergio Rodriguez"
+  },
+  {
+    "questionText": "Find a player who played for the following teams.",
+    "answers": ["Olympiacos", "Real Madrid"],
+    "correctAnswer": "Nigel Williams-Goss"
+  },
+  {
+    "questionText": "Find a player who played for the following teams.",
+    "answers": ["Baskonia", "FC Barcelona"],
+    "correctAnswer": "Adam Hanga"
+  },
+  {
+    "questionText": "Find a player who played for the following teams.",
+    "answers": ["Zalgiris Kaunas", "Panathinaikos"],
+    "correctAnswer": "Lukas Lekavicius"
+  },
+  {
+    "questionText": "Find a player who played for the following teams.",
+    "answers": ["Maccabi Tel Aviv", "Fenerbahce"],
+    "correctAnswer": "Scottie Wilbekin"
+  },
+  {
+    "questionText": "Find a player who played for the following teams.",
+    "answers": ["Valencia Basket", "Real Madrid"],
+    "correctAnswer": "Alberto Abalde"
+  },
+  {
+    "questionText": "Find a player who played for the following teams.",
+    "answers": ["Olimpia Milano", "FC Barcelona"],
+    "correctAnswer": "Brandon Davies"
+  },
+  {
+    "questionText": "Find a player who played for the following teams.",
+    "answers": ["Baskonia", "Maccabi Tel Aviv"],
+    "correctAnswer": "Wade Baldwin"
+  }
+]

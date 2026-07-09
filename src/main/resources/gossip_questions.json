@@ -1,0 +1,52 @@
+[
+  {
+    "questionText": "Which EuroLeague legend is widely known by the nickname 'The Spanoulis Killer' after his famous defensive performances?",
+    "answers": ["Dimitris Diamantidis", "Nikos Zisis", "Theo Papaloukas", "Rimantas Kaukenas"],
+    "correctAnswer": "Dimitris Diamantidis"
+  },
+  {
+    "questionText": "Which player shocked the EuroLeague world by leaving Olympiacos to join Panathinaikos in 2020?",
+    "answers": ["Kostas Sloukas", "Tyler Dorsey", "Nick Calathes", "Ioannis Papapetrou"],
+    "correctAnswer": "Ioannis Papapetrou"
+  },
+  {
+    "questionText": "Which player transferred directly from Panathinaikos to Olympiacos in 2023?",
+    "answers": ["Kostas Antetokounmpo", "Kostas Sloukas", "Dinos Mitoglou", "Marius Grigonis"],
+    "correctAnswer": "Kostas Sloukas"
+  },
+  {
+    "questionText": "Which coach became famous for frequently smashing whiteboards during timeouts?",
+    "answers": ["Zeljko Obradovic", "Ergin Ataman", "Georgios Bartzokas", "Pablo Laso"],
+    "correctAnswer": "Zeljko Obradovic"
+  },
+  {
+    "questionText": "Which EuroLeague player is nicknamed 'The Greek Freak's brother'?",
+    "answers": ["Kostas Antetokounmpo", "Thanasis Antetokounmpo", "Alex Antetokounmpo", "Francis Antetokounmpo"],
+    "correctAnswer": "Kostas Antetokounmpo"
+  },
+  {
+    "questionText": "Which player was known for kissing the center court logo after winning the 2012 EuroLeague title with Olympiacos?",
+    "answers": ["Vassilis Spanoulis", "Giorgos Printezis", "Kostas Papanikolaou", "Pero Antic"],
+    "correctAnswer": "Giorgos Printezis"
+  },
+  {
+    "questionText": "Which coach famously guaranteed that Panathinaikos would win the 2024 EuroLeague title?",
+    "answers": ["Xavi Pascual", "Ergin Ataman", "Dejan Radonjic", "Rick Pitino"],
+    "correctAnswer": "Ergin Ataman"
+  },
+  {
+    "questionText": "Which player became famous for his signature backward headband look?",
+    "answers": ["Mike James", "Shane Larkin", "Walter Tavares", "Jordan Loyd"],
+    "correctAnswer": "Mike James"
+  },
+  {
+    "questionText": "Which EuroLeague superstar is often called 'El Chacho'?",
+    "answers": ["Rudy Fernandez", "Sergio Llull", "Sergio Rodriguez", "Juan Carlos Navarro"],
+    "correctAnswer": "Sergio Rodriguez"
+  },
+  {
+    "questionText": "Which player hit the iconic game-winning shot for Olympiacos in the 2012 EuroLeague Final?",
+    "answers": ["Vassilis Spanoulis", "Giorgos Printezis", "Kostas Papanikolaou", "Kyle Hines"],
+    "correctAnswer": "Giorgos Printezis"
+  }
+]

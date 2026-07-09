@@ -52,17 +52,19 @@
 
 ## 🔜 Later
 
-* [ ] Replace Difficulty system with Categories
-  * [ ] History
-  * [ ] Geography
-  * [ ] Logo Quiz
-  * [ ] Club Combo
-  * [ ] Missing player from Roster
-  * [ ] Over/Under
-  * [ ] SouSou
-  * [ ] Transfer History
-  * [ ] Guess the score
-  * [ ] Top 5
+* [✅] Replace Difficulty system with Categories
+  * [✅] History
+  * [✅] Geography
+  * [✅] Logo Quiz
+  * [✅] Club Combo
+  * [✅] Missing player from Roster
+  * [✅] Over/Under
+  * [✅] Gossip
+  * [✅] Transfer History
+  * [✅] Guess the score
+  * [✅] Top 5
+* [ ] Fill the JSON files with questions
+* [ ] Each category to have different difficulty
 * [ ] Category selection screen
 * [ ] Support multiple categories
 * [ ] Statistics persistence
