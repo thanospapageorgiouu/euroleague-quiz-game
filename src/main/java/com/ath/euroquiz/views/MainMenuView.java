@@ -110,7 +110,7 @@ public class MainMenuView {
 
         //Buttons Actions
         startButton.setOnAction(e -> {
-            GameManager gameManager = new GameManager();
+            GameManager gameManager = new GameManager(player1NameField.getText(), player2NameField.getText());
             BoardView boardView = new BoardView(stage, gameManager);
             stage.setScene(boardView.getScene());
         });

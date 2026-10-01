@@ -3,7 +3,6 @@ package com.ath.euroquiz.loaders;
 import com.ath.euroquiz.enums.Category;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import com.ath.euroquiz.enums.Category;
 import com.ath.euroquiz.models.Question;
 import java.io.InputStreamReader;
 import java.io.InputStream;

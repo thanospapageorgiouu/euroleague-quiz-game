@@ -3,6 +3,7 @@ package com.ath.euroquiz.views;
 import com.ath.euroquiz.enums.Category;
 import com.ath.euroquiz.managers.GameManager;
 import com.ath.euroquiz.models.Player;
+import com.ath.euroquiz.models.Question;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -79,6 +80,11 @@ public class BoardView {
                 -fx-background-color: gold
                 """);
                 box.getChildren().add(button);
+                button.setOnAction(event -> {
+                    Question question = gameManager.getRandomQuestion(Category.HISTORY);
+
+                    System.out.println("Question: " + question.getQuestionText());
+                });
             }
 
             boardGrid.add(box, x % 5, x % 2);
