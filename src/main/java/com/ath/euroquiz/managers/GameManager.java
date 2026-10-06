@@ -20,7 +20,7 @@ public class GameManager {
     public GameManager(String playerName1, String playerName2){
         player1.setName(playerName1);
         player2.setName(playerName2);
-
+        currentPlayer = player1;
         questions = new HashMap<>();
 
         for (Category catergory : Category.values()){

@@ -47,6 +47,7 @@
   * [ ] Manage selected questions
   * [ ] Manage score
   * [ ] Reduce logic inside views
+* [ ] Add a Value attribute to the Question model (100/200/300)
 
 ---
 

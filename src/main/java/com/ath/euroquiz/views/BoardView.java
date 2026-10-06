@@ -20,17 +20,20 @@ import java.util.List;
 public class BoardView {
 
     private final Scene scene;
+    private Label score;
+    private final GameManager gameManager;
 
     public BoardView(Stage stage, GameManager gameManager) {
 
         BorderPane root = new BorderPane();
         Player player1 = gameManager.player1;
         Player player2 = gameManager.player2;
+        this.gameManager = gameManager;
 
         // ---------- TOP ----------
         Label player1Name = new Label(player1.getName());
         Label player2Name = new Label(player2.getName());
-        Label score = new Label(player1.getScore() + " - " + player2.getScore());
+        score = new Label(player1.getScore() + " - " + player2.getScore());
 
         player1Name.setStyle("-fx-font-size: 20;");
         player2Name.setStyle("-fx-font-size: 20;");
@@ -81,9 +84,10 @@ public class BoardView {
                 """);
                 box.getChildren().add(button);
                 button.setOnAction(event -> {
-                    Question question = gameManager.getRandomQuestion(Category.HISTORY);
-
-                    System.out.println("Question: " + question.getQuestionText());
+                    Question question = gameManager.getRandomQuestion(category);
+                    QuestionView questionView = new QuestionView(stage, gameManager, question, this);
+                    stage.setScene(questionView.getScene());
+                    button.setDisable(true);
                 });
             }
 
@@ -97,5 +101,9 @@ public class BoardView {
 
     public Scene getScene() {
         return scene;
+    }
+
+    public void updateScore(){
+        score.setText(gameManager.player1.getScore() + " - " + gameManager.player2.getScore());
     }
 }
