@@ -4,11 +4,8 @@ import com.ath.euroquiz.enums.Category;
 import com.ath.euroquiz.loaders.JsonQuestionLoader;
 import com.ath.euroquiz.models.Player;
 import com.ath.euroquiz.models.Question;
-import java.util.Random;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.List;
+import java.util.*;
 
 public class GameManager {
     public Player player1 = new Player("Player 1");
@@ -23,18 +20,24 @@ public class GameManager {
         currentPlayer = player1;
         questions = new HashMap<>();
 
-        for (Category catergory : Category.values()){
-            List<Question> q = JsonQuestionLoader.loadQuestions(catergory);
-            questions.put(catergory, q);
+        for (Category category : Category.values()){
+            List<Question> q = JsonQuestionLoader.loadQuestions(category);
+            questions.put(category, q);
         }
     }
 
-    public Question getRandomQuestion(Category category){
-        List<Question> categoryQuestions = questions.get(category);
+    public Question getRandomQuestion(Category category, int value){
+        List<Question> tempCategoryQuestions = questions.get(category);
+        List<Question> categoryQuestions = new ArrayList<Question>();
+        for (Question q : tempCategoryQuestions){
+            if(q.getValue() == value){
+                categoryQuestions.add(q);
+            }
+        }
         Random random = new Random();
         int index = random.nextInt(categoryQuestions.size());
         Question returnQuestion = categoryQuestions.get(index);
-        categoryQuestions.remove(index);
+        tempCategoryQuestions.remove(index);
         return returnQuestion;
     }
 }

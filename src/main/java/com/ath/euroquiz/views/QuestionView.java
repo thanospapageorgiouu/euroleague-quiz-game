@@ -53,7 +53,7 @@ public class QuestionView {
             answerButton.setOnAction(event -> {
                 if (answer.equals(question.getCorrectAnswer())){
                     int tempScore = gameManager.currentPlayer.getScore();
-                    gameManager.currentPlayer.setScore(tempScore+100);
+                    gameManager.currentPlayer.setScore(tempScore+question.getValue());
                 }else{
                     System.out.println("Wrong!");
                 }

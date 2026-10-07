@@ -6,21 +6,18 @@
 * [✅] JavaFX integration
 * [✅] Main Menu screen
 * [✅] Quiz screen
-* [✅] Result screen
+* [ ] Result screen
 * [✅] Navigation between screens
 * [✅] Player model
 * [✅] Player creation
 * [✅] Player name input
-* [✅] Difficulty enum
-* [✅] Difficulty selection
 * [✅] Question model refactor (`List<String> answers`)
 * [✅] Gson integration
 * [✅] JSON question files
 * [✅] JsonQuestionLoader
 * [✅] Dynamic question loading
 * [✅] Score system
-* [✅] Result screen score display
-* [✅] Restart game flow
+* [ ] Restart game flow
 * [ ] Player name validation
   * [ ] Reject empty names
   * [ ] Reject names containing only spaces
@@ -32,8 +29,6 @@
 * [✅] Result statistics
   * [✅] Correct answers
   * [✅] Wrong answers
-  * [✅] Accuracy percentage
-  * [✅] Questions answered
 * [✅] Shuffle answer order
 * [ ] Improve UI styling
   * [ ] Better spacing

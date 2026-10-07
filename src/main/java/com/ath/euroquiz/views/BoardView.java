@@ -77,14 +77,15 @@ public class BoardView {
             """);
 
             for (int i = 1; i <= 3; i++) {
-                Button button = new Button(String.valueOf(i * 100));
+                int tempValue = i*100;
+                Button button = new Button(String.valueOf(tempValue));
                 button.setStyle("""
                 -fx-font-size: 20;
                 -fx-background-color: gold
                 """);
                 box.getChildren().add(button);
                 button.setOnAction(event -> {
-                    Question question = gameManager.getRandomQuestion(category);
+                    Question question = gameManager.getRandomQuestion(category, tempValue);
                     QuestionView questionView = new QuestionView(stage, gameManager, question, this);
                     stage.setScene(questionView.getScene());
                     button.setDisable(true);
