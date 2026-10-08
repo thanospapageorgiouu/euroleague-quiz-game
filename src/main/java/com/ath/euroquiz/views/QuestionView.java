@@ -51,21 +51,10 @@ public class QuestionView {
             answerButton.setPrefWidth(250);
 
             answerButton.setOnAction(event -> {
-                if (answer.equals(question.getCorrectAnswer())){
-                    int tempScore = gameManager.currentPlayer.getScore();
-                    gameManager.currentPlayer.setScore(tempScore+question.getValue());
-                }else{
-                    System.out.println("Wrong!");
-                }
+                gameManager.answerQuestion(question, answer);
                 continueButton.setVisible(true);
                 for (Button b : buttonList){
                     b.setDisable(true);
-                }
-                Player tempCurrentPlayer = gameManager.currentPlayer;
-                if (tempCurrentPlayer == gameManager.player1){
-                    gameManager.currentPlayer = gameManager.player2;
-                }else{
-                    gameManager.currentPlayer = gameManager.player1;
                 }
             });
             answersBox.getChildren().add(answerButton);

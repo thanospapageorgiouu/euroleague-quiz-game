@@ -40,4 +40,17 @@ public class GameManager {
         tempCategoryQuestions.remove(index);
         return returnQuestion;
     }
+
+    public void answerQuestion(Question question, String answer){
+        //Answer check
+        if (answer.equals(question.getCorrectAnswer())){
+            currentPlayer.setScore(currentPlayer.getScore() + question.getValue());
+        }
+        //Switch turn
+        if(currentPlayer == player1){
+            currentPlayer = player2;
+        }else{
+            currentPlayer = player1;
+        }
+    }
 }
