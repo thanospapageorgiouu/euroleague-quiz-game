@@ -1,5 +1,7 @@
 package com.ath.euroquiz.models;
 
+import com.ath.euroquiz.enums.QuestionType;
+
 import java.util.List;
 
 public class Question {
@@ -7,6 +9,7 @@ public class Question {
     private List<String> answers;
     private String correctAnswer;
     private int value;
+    private QuestionType type;
 
     public Question(String questionText, List<String> answers, String correctAnswer, int value) {
         this.questionText = questionText;
@@ -22,4 +25,5 @@ public class Question {
     public List<String> getAnswers(){return answers;}
     public String getCorrectAnswer(){return correctAnswer;}
     public int getValue(){return value;}
+    public QuestionType getType(){return type;}
 }

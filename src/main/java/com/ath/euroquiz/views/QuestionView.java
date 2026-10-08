@@ -3,6 +3,7 @@ package com.ath.euroquiz.views;
 import com.ath.euroquiz.models.Player;
 import com.ath.euroquiz.models.Question;
 import com.ath.euroquiz.managers.GameManager;
+import com.ath.euroquiz.enums.Category;
 
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
@@ -23,7 +24,7 @@ import java.util.ArrayList;
 public class QuestionView {
     private final Scene scene;
 
-    public QuestionView(Stage stage, GameManager gameManager, Question question, BoardView boardView){
+    public QuestionView(Stage stage, GameManager gameManager, Question question, BoardView boardView, Category category){
         ArrayList<Button> buttonList = new ArrayList<Button>();
         BorderPane root = new BorderPane();
         Button continueButton = new Button("Continue");
