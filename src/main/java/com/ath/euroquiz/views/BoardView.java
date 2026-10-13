@@ -84,9 +84,10 @@ public class BoardView {
                 -fx-background-color: gold
                 """);
                 box.getChildren().add(button);
+
                 button.setOnAction(event -> {
                     Question question = gameManager.getRandomQuestion(category, tempValue);
-                    QuestionView questionView = new QuestionView(stage, gameManager, question, this, category);
+                    BaseQuestionView questionView = QuestionViewFactory.create(stage, gameManager, question, this, category);
                     stage.setScene(questionView.getScene());
                     button.setDisable(true);
                 });

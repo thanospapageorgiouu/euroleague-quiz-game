@@ -1,30 +1,23 @@
 package com.ath.euroquiz.views;
 
-import com.ath.euroquiz.models.Player;
 import com.ath.euroquiz.models.Question;
 import com.ath.euroquiz.managers.GameManager;
-import com.ath.euroquiz.enums.Category;
 
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
 import javafx.scene.layout.BorderPane;
 import javafx.geometry.Pos;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
-import javafx.stage.Stage;
 
 import java.util.ArrayList;
 
-public class QuestionView {
-    private final Scene scene;
+public class MultipleChoiceView extends BaseQuestionView{
 
-    public QuestionView(Stage stage, GameManager gameManager, Question question, BoardView boardView, Category category){
+    public MultipleChoiceView(Stage stage, GameManager gameManager, Question question, BoardView boardView){
+        super(stage, gameManager, question, boardView);
         ArrayList<Button> buttonList = new ArrayList<Button>();
         BorderPane root = new BorderPane();
         Button continueButton = new Button("Continue");
@@ -73,9 +66,5 @@ public class QuestionView {
 
         //Scene
         scene = new Scene(root, 1200, 800);
-    }
-
-    public Scene getScene(){
-        return scene;
     }
 }
