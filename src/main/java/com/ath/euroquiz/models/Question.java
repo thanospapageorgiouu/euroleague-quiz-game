@@ -7,7 +7,7 @@ public class Question {
     private List<String> answers;
     private String correctAnswer;
     private int value;
-    private String imagePath;
+    private List<String> imagePaths;
 
     public Question(String questionText, List<String> answers, String correctAnswer, int value) {
         this.questionText = questionText;
@@ -23,5 +23,5 @@ public class Question {
     public List<String> getAnswers(){return answers;}
     public String getCorrectAnswer(){return correctAnswer;}
     public int getValue(){return value;}
-    public String getImagePath(){return imagePath;}
+    public List<String> getImagePaths(){return imagePaths;}
 }

@@ -1,0 +1,9 @@
+[
+  {
+    "questionText": "Which player has played in these leagues?",
+    "answers": [],
+    "imagePaths": ["/images/logos/sl2.jpeg", "/images/logos/eskana_logo.jpeg", "/images/logos/14071.jpg"],
+    "correctAnswer": "Papatzis",
+    "value": 100
+  }
+]

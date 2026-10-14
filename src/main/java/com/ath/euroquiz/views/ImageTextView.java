@@ -15,7 +15,8 @@ import javafx.scene.control.TextField;
 public class ImageTextView extends BaseQuestionView{
     public ImageTextView(Stage stage, GameManager gameManager, Question question, BoardView boardView){
         super(stage, gameManager, question, boardView);
-        Image image = new Image(getClass().getResource(question.getImagePath()).toExternalForm());
+        Label questionLabel = new Label(question.getQuestionText());
+        Image image = new Image(getClass().getResource(question.getImagePaths().getFirst()).toExternalForm());
         ImageView imageView = new ImageView(image);
         imageView.setPreserveRatio(true);
 
@@ -44,7 +45,7 @@ public class ImageTextView extends BaseQuestionView{
         });
 
         VBox vBox = new VBox();
-        vBox.getChildren().addAll(imageView, answerField, submitButton, resultLabel, continueButton);
+        vBox.getChildren().addAll(questionLabel, imageView, answerField, submitButton, resultLabel, continueButton);
         vBox.setSpacing(15);
 
         scene = new Scene(vBox, 1200, 800);

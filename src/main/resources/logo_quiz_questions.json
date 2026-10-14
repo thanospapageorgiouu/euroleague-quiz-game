@@ -2,8 +2,22 @@
   {
     "questionText": "What logo is this?",
     "answers": [],
-    "imagePath": "/images/logos/eskana_logo.jpeg",
+    "imagePaths": ["/images/logos/eskana_logo.jpeg"],
     "correctAnswer": "Eskana",
     "value": 100
+  },
+  {
+    "questionText": "What logo is this?",
+    "answers": [],
+    "imagePaths": ["/images/logos/eskana_logo.jpeg"],
+    "correctAnswer": "Eskana",
+    "value": 200
+  },
+  {
+    "questionText": "What logo is this?",
+    "answers": [],
+    "imagePaths": ["/images/logos/eskana_logo.jpeg"],
+    "correctAnswer": "Eskana",
+    "value": 300
   }
 ]
