@@ -1,0 +1,9 @@
+[
+  {
+    "questionText": "What logo is this?",
+    "answers": [],
+    "imagePath": "/images/logos/eskana_logo.jpeg",
+    "correctAnswer": "Eskana",
+    "value": 100
+  }
+]

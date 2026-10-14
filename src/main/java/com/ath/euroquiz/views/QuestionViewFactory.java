@@ -12,6 +12,9 @@ public class QuestionViewFactory {
             case MULTIPLE_CHOICE -> {
                 return new MultipleChoiceView(stage, gameManager, question, boardView);
             }
+            case IMAGE_TEXT -> {
+                return new ImageTextView(stage, gameManager, question, boardView);
+            }
             default -> {
                 throw new UnsupportedOperationException(String.valueOf(category.getQuestionType()));
             }

@@ -41,16 +41,20 @@ public class GameManager {
         return returnQuestion;
     }
 
-    public void answerQuestion(Question question, String answer){
+    public boolean answerQuestion(Question question, String answer){
         //Answer check
-        if (answer.equals(question.getCorrectAnswer())){
+        boolean correct = answer.trim().equalsIgnoreCase(question.getCorrectAnswer().trim());
+        if (correct){
             currentPlayer.setScore(currentPlayer.getScore() + question.getValue());
         }
+
         //Switch turn
         if(currentPlayer == player1){
             currentPlayer = player2;
         }else{
             currentPlayer = player1;
         }
+
+        return correct;
     }
 }
