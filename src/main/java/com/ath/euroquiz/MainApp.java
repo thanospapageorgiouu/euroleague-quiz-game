@@ -2,15 +2,7 @@ package com.ath.euroquiz;
 
 import com.ath.euroquiz.views.MainMenuView;
 import javafx.application.Application;
-import javafx.scene.Scene;
-import javafx.scene.control.Label;
-import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
-import javafx.scene.control.Button;
-import javafx.scene.layout.VBox;
-import javafx.geometry.Pos;
-
-import com.ath.euroquiz.views.QuizView;
 
 public class MainApp extends Application {
 

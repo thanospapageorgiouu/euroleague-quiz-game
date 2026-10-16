@@ -18,6 +18,9 @@ public class QuestionViewFactory {
             case MULTI_IMAGE_TEXT -> {
                 return new MultiImageTextView(stage, gameManager, question, boardView);
             }
+			case OVER_UNDER -> {
+                return new OverUnderView(stage, gameManager, question, boardView);
+            }
             default -> {
                 throw new UnsupportedOperationException(String.valueOf(category.getQuestionType()));
             }
