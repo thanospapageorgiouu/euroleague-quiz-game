@@ -21,6 +21,9 @@ public class QuestionViewFactory {
 			case OVER_UNDER -> {
                 return new OverUnderView(stage, gameManager, question, boardView);
             }
+			case GUESS_SCORE -> {
+                return new GuessScoreView(stage, gameManager, question, boardView);
+            }
             default -> {
                 throw new UnsupportedOperationException(String.valueOf(category.getQuestionType()));
             }

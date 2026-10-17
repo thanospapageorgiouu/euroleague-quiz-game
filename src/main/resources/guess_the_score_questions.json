@@ -1,0 +1,9 @@
+[
+  {
+    "questionText": "Whats the score of this game?",
+    "answers": [],
+    "imagePaths": ["/images/logos/sl2.jpeg", "/images/logos/eskana_logo.jpeg"],
+    "correctAnswer": "73-38",
+    "value": 100
+  }
+]
