@@ -24,6 +24,9 @@ public class QuestionViewFactory {
 			case GUESS_SCORE -> {
                 return new GuessScoreView(stage, gameManager, question, boardView);
             }
+			case TOP_FIVE -> {
+                return new TopFiveView(stage, gameManager, question, boardView);
+            }
             default -> {
                 throw new UnsupportedOperationException(String.valueOf(category.getQuestionType()));
             }

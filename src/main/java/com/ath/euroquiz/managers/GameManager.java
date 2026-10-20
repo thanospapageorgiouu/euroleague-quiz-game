@@ -14,6 +14,12 @@ public class GameManager {
     public Player currentPlayer;
     private Map<Category, List<Question>> questions;
 
+    //TopFive Exclusive fields
+    private Map<String, Integer> givenAnswers = new HashMap();
+    private int correctAnswersCount = 0;
+    private int falseAnswersCount = 0;
+    private boolean wrongAnswerUsed = false;
+
     public GameManager(String playerName1, String playerName2){
         player1.setName(playerName1);
         player2.setName(playerName2);
@@ -47,14 +53,69 @@ public class GameManager {
         if (correct){
             currentPlayer.setScore(currentPlayer.getScore() + question.getValue());
         }
-
         //Switch turn
         if(currentPlayer == player1){
             currentPlayer = player2;
         }else{
             currentPlayer = player1;
         }
-
         return correct;
+    }
+
+    public int answerQuestionInt(Question question, String answerPre){
+        //13 for 5/5
+        String answer = answerPre.trim().toLowerCase();
+        if (givenAnswers.containsKey(answer)){
+            if(givenAnswers.get(answer) >= 1 && givenAnswers.get(answer) <= 5){
+                //Returns 10 for 2nd time given same correct answer
+                return 10;
+            }else if(givenAnswers.get(answer) == -1){
+                //Returns 11 for second time given same wrong answer
+                return 11;
+            }
+        }else{
+            for (int i = 0; i < question.getAnswers().size(); i++){
+                if (question.getAnswers().get(i).trim().equalsIgnoreCase(answer.trim())){
+                    givenAnswers.put(answer, i + 1);
+                    correctAnswersCount++;
+                    return i+1;
+                }
+            }
+            if (!wrongAnswerUsed){
+                givenAnswers.put(answer, -1);
+                wrongAnswerUsed = true;
+                falseAnswersCount++;
+                return -1;
+            }else{
+                //Returns 12 for 2nd wrong given answer - question ends
+                falseAnswersCount++;
+                return 12;
+            }
+        }
+        return 0;
+    }
+
+    public void resetTopFiveState(){
+        givenAnswers.clear();
+        correctAnswersCount = 0;
+        falseAnswersCount = 0;
+        wrongAnswerUsed = false;
+    }
+
+    public void finishTopFiveQuestion(){
+        if (correctAnswersCount == 5){
+            currentPlayer.setScore(currentPlayer.getScore() + 300);
+        }else if (correctAnswersCount == 4){
+            currentPlayer.setScore(currentPlayer.getScore() + 100);
+        }
+        if(currentPlayer == player1){
+            currentPlayer = player2;
+        }else{
+            currentPlayer = player1;
+        }
+    }
+
+    public boolean checkFinished(){
+        return correctAnswersCount == 5 || falseAnswersCount == 2;
     }
 }

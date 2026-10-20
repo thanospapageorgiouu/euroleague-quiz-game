@@ -1,0 +1,15 @@
+[
+  {
+    "questionText": "Name the top 5 scorers in EuroLeague history.",
+    "answers": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "correctAnswer": "",
+    "value": 300,
+    "type": "TOP_FIVE"
+  }
+]
