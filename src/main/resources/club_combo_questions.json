@@ -1,9 +1,23 @@
 [
   {
+    "questionText": "Which player has played in these teams ($)?",
+    "answers": [],
+    "imagePaths": ["/images/logos/olympiakos.jpeg", "/images/logos/pao.jpg"],
+    "correctAnswer": "Sloukas",
+    "value": 100
+  },
+  {
+    "questionText": "Which player has played in these teams?",
+    "answers": [],
+    "imagePaths": ["/images/logos/olympiakos.jpg", "/images/logos/aek.jpg"],
+    "correctAnswer": "Larentzakis",
+    "value": 200
+  },
+  {
     "questionText": "Which player has played in these leagues?",
     "answers": [],
-    "imagePaths": ["/images/logos/sl2.jpeg", "/images/logos/eskana_logo.jpeg", "/images/logos/14071.jpg"],
+    "imagePaths": ["/images/logos/anadolu_efes.png", "/images/logos/zalgiris_kaunas.png", "/images/logos/virtus_bologna.png"],
     "correctAnswer": "Papatzis",
-    "value": 100
+    "value": 300
   }
 ]

@@ -9,9 +9,12 @@
   * [ ] Reject names containing only spaces
   * [ ] Define maximum name length
 * [ ] Improve UI styling
-  * [ ] Better spacing
-  * [ ] Better fonts
-  * [ ] Better button sizing
+  * [ ] GuessScoreView
+  * [ ] ImageTextView
+  * [ ] MultiImageTextView
+  * [ ] MultipleChoiceView
+  * [ ] OverUnderView
+  * [ ] TopFiveView
 * [ ] Add game configuration constants
   * [ ] Number of questions per game
 

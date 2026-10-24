@@ -25,11 +25,13 @@ public class MultiImageTextView extends BaseQuestionView{
         hbox.setSpacing(20);
         hbox.setAlignment(Pos.CENTER);
 
+
         for(String i : question.getImagePaths()){
             Image image = new Image(getClass().getResource(i).toExternalForm());
+            System.out.println(image);
             ImageView imageView = new ImageView(image);
-            imageView.setFitWidth(250);
-            imageView.setFitHeight(250);
+            imageView.setFitWidth(200);
+            imageView.setFitHeight(200);
             imageView.setPreserveRatio(true);
             hbox.getChildren().add(imageView);
         }
