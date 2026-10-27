@@ -162,7 +162,7 @@ public class GameCreationView {
 				name2 = "Player 2";
 			}
 			GameManager gameManager = new GameManager(name1, name2);
-			BoardView boardView = new BoardView(stage, gameManager);
+			BoardView boardView = new BoardView(stage, gameManager, 6);
 			stage.setScene(boardView.getScene());
 		});
 

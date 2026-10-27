@@ -22,13 +22,15 @@ public class BoardView {
     private final Scene scene;
     private Label score;
     private final GameManager gameManager;
+    private final int categoryCount;
 
-    public BoardView(Stage stage, GameManager gameManager) {
+    public BoardView(Stage stage, GameManager gameManager, int categoryCount) {
 
         BorderPane root = new BorderPane();
         Player player1 = gameManager.player1;
         Player player2 = gameManager.player2;
         this.gameManager = gameManager;
+        this.categoryCount = categoryCount;
 
         // ---------- TOP ----------
         Label player1Name = new Label(player1.getName());
@@ -58,8 +60,19 @@ public class BoardView {
 
         root.setCenter(boardGrid);
 
+        // TODO: Replace this hardcoded list with the selected game mode's categories.
+        List<Category> selectedCategories = List.of(
+                Category.HISTORY,
+                Category.GEOGRAPHY,
+                Category.GOSSIP,
+                Category.GUESS_THE_SCORE,
+                Category.OVER_UNDER,
+                Category.CLUB_COMBO
+
+        );
+
         int x = 0;
-        for(Category category : Category.values()) {
+        for(Category category : selectedCategories) {
             VBox box = new VBox();
             box.setAlignment(Pos.TOP_CENTER);
             Label categoryName = new Label(category.getDisplayName());
@@ -93,7 +106,10 @@ public class BoardView {
                 });
             }
 
-            boardGrid.add(box, x % 5, x % 2);
+            int column = x % 3;
+            int row = x / 3;
+
+            boardGrid.add(box, column, row);
             x++;
         }
 
