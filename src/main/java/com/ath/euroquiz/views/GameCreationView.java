@@ -1,14 +1,11 @@
+
 package com.ath.euroquiz.views;
 
 import com.ath.euroquiz.managers.GameManager;
 
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.RadioButton;
-import javafx.scene.control.TextField;
-import javafx.scene.control.ToggleGroup;
+import javafx.scene.control.*;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
@@ -56,14 +53,14 @@ public class GameCreationView {
 
 		ToggleGroup gameModeGroup = new ToggleGroup();
 
-		RadioButton sixCategoriesButton =
-				new RadioButton("6 Categories");
+		ToggleButton sixCategoriesButton =
+				new ToggleButton("6 Categories");
 
-		RadioButton eightCategoriesButton =
-				new RadioButton("8 Categories - Coming Soon");
+		ToggleButton eightCategoriesButton =
+				new ToggleButton("8 Categories\nComing Soon");
 
-		RadioButton tenCategoriesButton =
-				new RadioButton("10 Categories - Coming Soon");
+		ToggleButton tenCategoriesButton =
+				new ToggleButton("10 Categories\nComing Soon");
 
 		sixCategoriesButton.setToggleGroup(gameModeGroup);
 		eightCategoriesButton.setToggleGroup(gameModeGroup);
@@ -74,14 +71,21 @@ public class GameCreationView {
 		eightCategoriesButton.setDisable(true);
 		tenCategoriesButton.setDisable(true);
 
-		VBox gameModesBox = new VBox(15,
-				chooseModeLabel,
+		// Game mode cards
+		HBox modesRow = new HBox(15,
 				sixCategoriesButton,
 				eightCategoriesButton,
 				tenCategoriesButton
 		);
 
-		gameModesBox.setAlignment(Pos.CENTER_LEFT);
+		modesRow.setAlignment(Pos.CENTER);
+
+		VBox gameModesBox = new VBox(20,
+				chooseModeLabel,
+				modesRow
+		);
+
+		gameModesBox.setAlignment(Pos.CENTER);
 
 		// Buttons
 		Button startButton = new Button("Start Game");
@@ -124,21 +128,6 @@ public class GameCreationView {
 						"-fx-text-fill: white;"
 		);
 
-		sixCategoriesButton.setStyle(
-				"-fx-font-size: 16px;" +
-						"-fx-text-fill: white;"
-		);
-
-		eightCategoriesButton.setStyle(
-				"-fx-font-size: 16px;" +
-						"-fx-text-fill: #888888;"
-		);
-
-		tenCategoriesButton.setStyle(
-				"-fx-font-size: 16px;" +
-						"-fx-text-fill: #888888;"
-		);
-
 		startButton.setStyle(
 				"-fx-background-color: #ff6b00;" +
 						"-fx-text-fill: white;" +
@@ -152,20 +141,45 @@ public class GameCreationView {
 						"-fx-font-size: 18px;"
 		);
 
+		// Initial card styling
+		updateModeStyles(
+				sixCategoriesButton,
+				eightCategoriesButton,
+				tenCategoriesButton,
+				gameModeGroup.getSelectedToggle()
+		);
+
+		// Update card styles when selection changes
+		gameModeGroup.selectedToggleProperty().addListener(
+				(obs, oldToggle, newToggle) ->
+						updateModeStyles(
+								sixCategoriesButton,
+								eightCategoriesButton,
+								tenCategoriesButton,
+								newToggle
+						)
+		);
+
+		// Start Game action
 		startButton.setOnAction(event -> {
 			String name1 = player1NameField.getText().trim();
 			String name2 = player2NameField.getText().trim();
-			if (name1.isEmpty()){
+
+			if (name1.isEmpty()) {
 				name1 = "Player 1";
 			}
-			if (name2.isEmpty()){
+
+			if (name2.isEmpty()) {
 				name2 = "Player 2";
 			}
+
 			GameManager gameManager = new GameManager(name1, name2);
 			BoardView boardView = new BoardView(stage, gameManager, 6);
+
 			stage.setScene(boardView.getScene());
 		});
 
+		// Back action
 		backButton.setOnAction(event -> {
 			MainMenuView mainMenuView = new MainMenuView(stage);
 			stage.setScene(mainMenuView.getScene());
@@ -173,6 +187,50 @@ public class GameCreationView {
 
 		// Scene
 		scene = new Scene(layout, 1280, 780);
+	}
+
+	private void updateModeStyles(
+			ToggleButton sixCategoriesButton,
+			ToggleButton eightCategoriesButton,
+			ToggleButton tenCategoriesButton,
+			Toggle selectedToggle) {
+
+		updateSingleModeStyle(
+				sixCategoriesButton,
+				selectedToggle == sixCategoriesButton
+		);
+
+		updateSingleModeStyle(
+				eightCategoriesButton,
+				selectedToggle == eightCategoriesButton
+		);
+
+		updateSingleModeStyle(
+				tenCategoriesButton,
+				selectedToggle == tenCategoriesButton
+		);
+	}
+
+	private void updateSingleModeStyle(
+			ToggleButton button,
+			boolean selected) {
+
+		String borderColor = selected ? "#ff6b00" : "#555555";
+		String textColor = button.isDisabled() ? "#888888" : "white";
+
+
+		button.setStyle("""
+                -fx-font-size: 17px;
+                -fx-padding: 25px;
+                -fx-pref-width: 230px;
+                -fx-pref-height: 140px;
+                -fx-alignment: center;
+                -fx-background-color: #2d2d2d;
+                -fx-border-color: %s;
+                -fx-border-width: 2px;
+                -fx-text-fill: %s;
+                -fx-shape: "";
+                """.formatted(borderColor, textColor));
 	}
 
 	public Scene getScene() {
